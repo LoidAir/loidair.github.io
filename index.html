@@ -1,1 +1,46 @@
-HelloGithub
+<h3>远程仓库(版本库)</h3>
+<ul>
+<li>
+<p>国内 <a href="https://coding.net/">Coding</a></p>
+</li>
+<li>
+<p>国内 <a href="https://gitee.com/">码云</a></p>
+</li>
+<li>
+<p>国外(全球) <a href="https://github.com/">Github</a></p>
+</li>
+</ul>
+<h3>工作流程</h3>
+<p><img alt="" src="https://images2017.cnblogs.com/blog/63651/201709/63651-20170904202237913-177051853.png" /></p>
+<p><img alt="" src="https://images2017.cnblogs.com/blog/63651/201709/63651-20170905212837976-775285128.png" /></p>
+<h3>基本命令</h3>
+<ul>
+<li>初始化项目文件夹: <code>git init</code></li>
+<li>添加文件到<strong>暂存区</strong>: <code>git add filename</code></li>
+<li>提交<strong>暂存区</strong>文件到本地<strong>版本库</strong>: <code>git commit -m "备注信息"</code></li>
+<li>本地版本库同步到<strong>远程版本库</strong>: <code>git push</code></li>
+<li>强制<strong>push</strong>: <code>git push -f</code></li>
+<li><strong>远程版本库</strong>同步到<strong>本地版本库</strong>: <code>git pull</code></li>
+<li>项目回滚: <code>git reset --hard commidid</code></li>
+</ul>
+<h3>团队操作</h3>
+<ul>
+<li>创建分支: <code>git branch 分支名</code></li>
+<li>切换分支: <code>git checkout 分支名</code></li>
+<li>创建并切换分支: <code>git checkout -b 分支名</code></li>
+<li>合并分支: <code>git merge 分支名</code></li>
+<li>删除分支: <code>git branch -d 分支名</code></li>
+<li>删除远程分支: <code>git push origin --delete 分支名</code></li>
+</ul>
+<h3>进阶命令</h3>
+<ul>
+<li>仅删除暂存区的文件(不影响工作区文件): <code>git rm --cache 文件名</code></li>
+<li>删除错误提交的<strong>commit</strong></li>
+<li>仅撤销已提交的版本库: <code>git reset --soft commitid</code></li>
+<li>仅撤销已提交的版本库和暂存区: <code>git reset --mixed commitid</code></li>
+<li>在<code>.s中可添加忽略(操作)文件,没次进行</code>git`操作的时候将不会被使用</li>
+</ul>
+<h3>其他知识</h3>
+<p><img alt="" src="https://git-scm.com/book/en/v2/book/02-git-basics/images/lifecycle.png" /></p>
+<p><img alt="" src="https://images2017.cnblogs.com/blog/63651/201709/63651-20170909091456335-1787774607.jpg" /></p>
+
